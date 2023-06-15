@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="images/Favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Galaxia</title>
 </head>
 
@@ -15,14 +16,14 @@
   <section class="first">
     <nav>
       <img src="./images/Logo.png" alt="Logo" class="image">
-      <div class="">
+      <div class="nav__title">
         <a href="" class="">Accueil</a>
-        <a href="" class="">Expositions</a>
-        <a href="" class="">Localisation</a>
-        <a href="" class="">L'Équipe</a>
-        <a href="" class="">Le Jeu</a>
+        <a href="#second" class="">Expositions</a>
+        <a href="#third" class="">Localisation</a>
+        <a href="#fifth" class="">L'Équipe</a>
+        <a href="#sixth" class="">Le Jeu</a>
       </div>
-      <a href="" class="button">En ce moment</a>
+      <a href="#fourth" class="button">En ce moment</a>
     </nav>
     <div class="first__slide">
       <div class="first__slide-left">
@@ -30,7 +31,7 @@
         <p class="subtitle">Une façon inédite de découvrir un nouveau monde ! <br>Grâce à des personnes
           expérimentées.
         </p>
-        <a href="" class="text-white fs-2 button">Nos Expositions</a>
+        <a href="#second" class="text-white fs-2 button">Nos Expositions</a>
       </div>
       <div>
         <img src="./images/blob.png" alt="">
@@ -39,13 +40,13 @@
   </section>
 
   <swiper-container class="mySwiper" pagination="true">
-    <swiper-slide class="second">
-      <p class="title">Nos Expositions</p>
-      <div>
+    <swiper-slide class="second" id="second">
+      <p class="title" data-aos="fade-up">Nos Expositions</p>
+      <div data-aos="fade-up">
         <p class="subtitle">La plupart de nos oeuvres sont expliquées de manière simple pour</p>
         <p class="subtitle">qu’un plus grand nombre puisse comprendre.</p>
       </div>
-      <div class="container-cards">
+      <div class="container-cards" data-aos="fade-up">
         <div class="cards">
           <img src="./images/rocket1.png" alt="">
           <span>Fusée rapide</span>
@@ -63,62 +64,64 @@
           <span>Réacteur de fusée</span>
           <p>Réacteur qui permet de fournir l’énergie
             nécessaire à la fusée.</p>
+          <button data-toggle="modal" data-target="#exampleModal">En savoir plus</button>
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide class="second">
+      <p class="title" data-aos="fade-up">Nos Expositions</p>
+      <div data-aos="fade-up">
+        <p class="subtitle">La plupart de nos oeuvres sont expliquées de manière simple pour</p>
+        <p class="subtitle">qu’un plus grand nombre puisse comprendre.</p>
+      </div>
+      <div class="container-cards" data-aos="fade-up">
+        <div class="cards">
+          <img src="./images/rocket11.jpg" alt="">
+          <span>Lanceur de Fusée</span>
+          <p>Sous un ciel étoilé, un puissant lanceur de fusée se dresse fièrement sur le pas de tir, prêt à propulser
+            son engin vers les confins de l'espace.</p>
+          <button>En savoir plus</button>
+        </div>
+        <div class="cards">
+          <img src="./images/rocket12.jpg" alt="">
+          <span>Fusée lente</span>
+          <p>Une fusée lente s'élève majestueusement dans le ciel, déployant ses puissantes ailes aérodynamiques.</p>
+          <button>En savoir plus</button>
+        </div>
+        <div class="cards">
+          <img src="./images/rocket13.jpg" alt="">
+          <span>Fusée avec détour</span>
+          <p>Une fusée audacieuse effectue un détour inattendu dans son trajet, évoquant une danse cosmique dans les
+            cieux.</p>
           <button>En savoir plus</button>
         </div>
       </div>
     </swiper-slide>
     <swiper-slide class="second">
-      <p class="title">Nos Expositions</p>
-      <div>
+      <p class="title" data-aos="fade-up">Nos Expositions</p>
+      <div data-aos="fade-up">
         <p class="subtitle">La plupart de nos oeuvres sont expliquées de manière simple pour</p>
         <p class="subtitle">qu’un plus grand nombre puisse comprendre.</p>
       </div>
-      <div class="container-cards">
+      <div class="container-cards" data-aos="fade-up">
         <div class="cards">
-          <img src="./images/rocket1.png" alt="">
-          <span>Fusée rapide</span>
-          <p>Petite fusée efficace qui s’occupe de ramener un chargement aux astronautes.</p>
+          <img src="./images/rocket21.jpg" alt="">
+          <span>Double Fusée</span>
+          <p>Une scène époustouflante se dévoile avec deux fusées lancées simultanément vers les étoiles.</p>
           <button>En savoir plus</button>
         </div>
         <div class="cards">
-          <img src="./images/rocket2.png" alt="">
-          <span>Fusée d’atterissage</span>
-          <p>Fusée de retour qui permets aux astronautes de redescendre sur Terre.</p>
+          <img src="./images/rocket22.jpg" alt="">
+          <span>Fusée Miniature</span>
+          <p>Une adorable fusée miniature trône fièrement sur son socle, réduisant la grandeur de l'espace à une échelle
+            miniature.</p>
           <button>En savoir plus</button>
         </div>
         <div class="cards">
-          <img src="./images/rocket3.png" alt="">
-          <span>Réacteur de fusée</span>
-          <p>Réacteur qui permet de fournir l’énergie
-            nécessaire à la fusée.</p>
-          <button>En savoir plus</button>
-        </div>
-      </div>
-    </swiper-slide>
-    <swiper-slide class="second">
-      <p class="title">Nos Expositions</p>
-      <div>
-        <p class="subtitle">La plupart de nos oeuvres sont expliquées de manière simple pour</p>
-        <p class="subtitle">qu’un plus grand nombre puisse comprendre.</p>
-      </div>
-      <div class="container-cards">
-        <div class="cards">
-          <img src="./images/rocket1.png" alt="">
-          <span>Fusée rapide</span>
-          <p>Petite fusée efficace qui s’occupe de ramener un chargement aux astronautes.</p>
-          <button>En savoir plus</button>
-        </div>
-        <div class="cards">
-          <img src="./images/rocket2.png" alt="">
-          <span>Fusée d’atterissage</span>
-          <p>Fusée de retour qui permets aux astronautes de redescendre sur Terre.</p>
-          <button>En savoir plus</button>
-        </div>
-        <div class="cards">
-          <img src="./images/rocket3.png" alt="">
-          <span>Réacteur de fusée</span>
-          <p>Réacteur qui permet de fournir l’énergie
-            nécessaire à la fusée.</p>
+          <img src="./images/rocket23.jpg" alt="">
+          <span>Fusée puissante</span>
+          <p>Une fusée d'une puissance exceptionnelle se dresse sur le pas de tir, prête à être propulsée vers les
+            confins de l'univers.</p>
           <button>En savoir plus</button>
         </div>
       </div>
@@ -126,8 +129,8 @@
 
   </swiper-container>
 
-  <section class="third">
-    <div class="third__first-slide">
+  <section class="third" id="third">
+    <div class="third__first-slide" data-aos="fade-down">
       <p class="title">Nous trouver</p>
       <p class="subtitle">Vous nous chercher ? Venez nous retrouver à fourvière<br> en hauteur au 14 Mnt des Carmes
         Déchaussé</p>
@@ -138,55 +141,194 @@
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2783.2516402587303!2d4.820360855371306!3d45.76614693891184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4eb00daa1b371%3A0x6528352b748fcd05!2s14%20Mnt%20des%20Carmes%20D%C3%A9chauss%C3%A9s%2C%2069005%20Lyon!5e0!3m2!1sfr!2sfr!4v1686218033826!5m2!1sfr!2sfr"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+          referrerpolicy="no-referrer-when-downgrade" data-aos="fade-right"></iframe>
       </div>
       <div>
-        <img src="./images/Localisation.png" alt="">
+        <img src="./images/Localisation.png" alt="" data-aos="fade-left">
       </div>
     </div>
 
   </section>
 
-  <section class="fourth">
-    <div class="fourth__slide">
+  <section class="fourth" id="fourth">
+    <div class="fourth__slide" data-aos="fade-up">
       <p class="title">En ce moment</p>
       <p class="subtitle">Découvrez les actualités du moment !</p>
     </div>
-    <img src="./images/thomas.png" alt="">
-
+    <img src="./images/thomas.png" alt="" data-aos="fade-up-right">
   </section>
 
-  <section class="fifth">
-    <div class="fifth__slide">
-      <p class="title">Notre équipe</p>
-      <p class="subtitle">Une équipe performante qui s’entraide au moindre soucis
-        pour vous fournir des présentations de qualité.</p>
-    </div>
-    <div class="cards-container2">
-      <div class="cards2">
-        <img src="./images/Fond.png" alt="" class="cards2__1">
-        <img src="./images/bryan.jpg" alt="" width="35%" height="25%" class="cards2__2-img">
-        <div class="cards2__2">
-          <p class="title2">Bryan Cellier</p>
-          <p class="subtitle">WEB Designer</p>
-          <div class="cards2__logos">
-            <img src="./images/Insta.png" alt="">
-            <img src="./images/Linkedin.png" alt="">
-            <img src="./images/Facebook.png" alt="">
+  <swiper-container class="mySwiper" pagination="true">
+    <swiper-slide class="fifth" id="fifth">
+      <div class="fifth__slide" data-aos="fade-down">
+        <p class="title">Les Web Médias</p>
+        <p class="subtitle">S'occupe de tout ce qui touche au design.</p>
+      </div>
+      <div class="cards-container2">
+        <div class="cards2" data-aos="flip-right">
+          <img src="./images/Fond.png" alt="" class="cards2__1">
+          <img src="./images/bryan.jpg" alt="" class="cards2__2-img">
+          <div class="cards2__2">
+            <p class="title2">Bryan Cellier</p>
+            <p class="subtitle">WEB Designer</p>
+            <div class="cards2__logos">
+              <img src="./images/Insta.png" alt="">
+              <img src="./images/Linkedin.png" alt="">
+              <img src="./images/Facebook.png" alt="">
+            </div>
           </div>
         </div>
+        <div class="cards2" data-aos="flip-left">
+          <img src="./images/Fond.png" alt="" class="cards2__1">
+          <img src="./images/alexis.jpg" alt="" class="cards2__2-img">
+          <div class="cards2__2">
+            <p class="title2">Alexis Gonneaud</p>
+            <p class="subtitle">WEB Designer</p>
+            <div class="cards2__logos">
+              <img src="./images/Insta.png" alt="">
+              <img src="./images/Linkedin.png" alt="">
+              <img src="./images/Facebook.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide class="fifth">
+      <div class="fifth__slide">
+        <p class="title">Les Infos</p>
+        <p class="subtitle">Que du Back.</p>
+      </div>
+      <div class="cards-container2">
+        <div class="cards2">
+          <img src="./images/Fond.png" alt="" class="cards2__1">
+          <img src="./images/loic.jpg" alt="" class="cards2__2-img">
+          <div class="cards2__2">
+            <p class="title2">Loïc Mo</p>
+            <p class="subtitle">Développer Back-End</p>
+            <div class="cards2__logos">
+              <img src="./images/Insta.png" alt="">
+              <img src="./images/Linkedin.png" alt="">
+              <img src="./images/Facebook.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="cards2">
+          <img src="./images/Fond.png" alt="" class="cards2__1">
+          <img src="./images/vincent.jpg" alt="" class="cards2__2-img">
+          <div class="cards2__2">
+            <p class="title2">Vincent Siles</p>
+            <p class="subtitle">Développer Back-End</p>
+            <div class="cards2__logos">
+              <img src="./images/Insta.png" alt="">
+              <img src="./images/Linkedin.png" alt="">
+              <img src="./images/Facebook.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="cards2">
+          <img src="./images/Fond.png" alt="" class="cards2__1">
+          <img src="./images/julien.jpg" alt="" class="cards2__2-img">
+          <div class="cards2__2">
+            <p class="title2">Julien Pierson</p>
+            <p class="subtitle">Développer Back-End</p>
+            <div class="cards2__logos">
+              <img src="./images/Insta.png" alt="">
+              <img src="./images/Linkedin.png" alt="">
+              <img src="./images/Facebook.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide class="fifth">
+      <div class="fifth__slide">
+        <p class="title">Les VR</p>
+        <p class="subtitle">Modélise...</p>
+      </div>
+      <div class="cards-container2">
+        <div class="cards2">
+          <img src="./images/Fond.png" alt="" class="cards2__1">
+          <img src="./images/mathis.jpg" alt="" class="cards2__2-img">
+          <div class="cards2__2">
+            <p class="title2">Mathis Haumont</p>
+            <p class="subtitle">Modélisateur 3D</p>
+            <div class="cards2__logos">
+              <img src="./images/Insta.png" alt="">
+              <img src="./images/Linkedin.png" alt="">
+              <img src="./images/Facebook.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="cards2">
+          <img src="./images/Fond.png" alt="" class="cards2__1">
+          <img src="./images/valentin.jpg" alt="" class="cards2__2-img">
+          <div class="cards2__2">
+            <p class="title2">Valentin Carré</p>
+            <p class="subtitle">Modélisateur 3D</p>
+            <div class="cards2__logos">
+              <img src="./images/Insta.png" alt="">
+              <img src="./images/Linkedin.png" alt="">
+              <img src="./images/Facebook.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+
+
+  <section class="sixth" id="sixth">
+    <div class="sixth__title" data-aos="fade-down">
+      <p class="title">Le Jeu</p>
+    </div>
+    <div class="sixth__content" data-aos="fade-up">
+      <div class="sixth__frame">
+        <div class="custom-loader"></div>
       </div>
     </div>
 
   </section>
 
-  <section class="sixth">
-
+  <section class="seventh">
+    <div class="seventh__top" data-aos="fade-up">
+      <div class="seventh__top1">
+        <img src="./images/Logo.png" alt="" width="175px" height="auto">
+        <div class="seventh__top1__1">
+          <p>14 Mnt des Carmes Déchaussé</p>
+          <p>+01 02 03 04 05</p>
+        </div>
+      </div>
+      <div class="seventh__top2">
+        <p class="seventh__top3__1">Suivez-nous sur les réseaux</p>
+        <div class="seventh__top2__1">
+          <a href="https://www.facebook.com/" target="_blank"><img src="./images/fbbw.png" alt=""></a>
+          <a href="https://twitter.com/" target="_blank"><img src="./images/twbw.png" alt=""></a>
+          <a href="https://www.instagram.com/" target="_blank"><img src="./images/instabw.png" alt=""></a>
+        </div>
+      </div>
+      <div class="seventh__top3">
+        <p class="seventh__top3__1">Menu</p>
+        <div class="seventh__top3__3">
+          <a href="">Expositions</a>
+          <a href="">Localisation</a>
+          <a href="">En ce moment</a>
+        </div>
+      </div>
+    </div>
+    <div class="seventh__bot">
+      <p>© Copyright Galaxia 2023</p>
+      <p>Mentions légales | Politiques de confidentialité</p>
+      <p>CGU | CVG</p>
+    </div>
   </section>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+
 
 </html>
